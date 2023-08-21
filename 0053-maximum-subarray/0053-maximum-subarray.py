@@ -9,8 +9,6 @@ class Solution(object):
         for i in nums:
             if i < 0:
                 count += 1
-                # save = i
-                # print('save', save)
                 if minNum < i:
                     minNum = max(minNum, i)
         
@@ -18,19 +16,15 @@ class Solution(object):
             return nums[0]
         elif leng == count:
             # 전부 음수일 때
-            print(minNum)
             return minNum
         else:
             for i in nums:
                 sum += i
                 if sum < 0:
                     sum = 0
-                    # print(nums.index(i),'if sum', sum)
                 else:
-                    # print(nums.index(i),'else sum', sum)
                     if sum > big:
                         big = sum
-                        # print(nums.index(i),'big', big)
             return big
         
         """

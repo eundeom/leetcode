@@ -1,9 +1,7 @@
 class Solution(object):
     def maxSubArray(self, nums):
         leng = len(nums)
-        sum = 0
-        big = 0
-        count = 0
+        sum = big = count = 0
         minNum = -1000000000
         
         for i in nums:

@@ -1,7 +1,6 @@
 class Solution(object):
     def getSum(self, a, b):
-        total = [a,b]
-        return sum(total)
+        return sum([a,b])
          
         """
         :type a: int

@@ -1,7 +1,6 @@
 class Solution(object):
     def missingNumber(self, nums):
         length = len(nums) + 1
-        # arr = list(range(0,length))
         arr = [0] * length
         
         for i in range(0,length):
